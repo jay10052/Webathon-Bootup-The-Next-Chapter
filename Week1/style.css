@@ -1,0 +1,72 @@
+#navbar{
+    background-color: #970747;
+    height: 50px;
+    align-content: center;
+    border: 3px solid black;
+    
+}
+
+#title{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    padding-left: 5px;
+    margin-right: 200px;
+    color: white;
+}
+
+.content1{
+    color: black;
+    background-color: rgb(251, 228, 231);
+    text-align: center;
+    padding: 30px;
+    border: 2px solid black;
+   
+}
+
+button{
+    color: white;
+    background-color:#970747 ;
+    height: 30px;
+    border : 3px solid black;
+    border-radius: 50%;
+}
+
+.para1{
+     font-weight: bolder;
+     text-decoration: underline;
+}
+
+.content2{
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid black;
+    }
+
+h1{
+    text-decoration: underline;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    background-image: url("https://img.freepik.com/free-photo/blurred-nightlights-city_23-2149049664.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid white;
+    text-decoration: underline;
+    
+}
+
+p{  
+    text-decoration: underline;
+    text-decoration-color: #631c3c;
+}
