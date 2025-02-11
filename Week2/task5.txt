@@ -1,0 +1,12 @@
+1. null
+Definition: null is an intentional absence of a value.
+Type: It is an object (typeof null === "object", which is a historical mistake in JavaScript).
+Usage: Developers explicitly assign null to a variable when they want to indicate that it has no value.
+
+2. undefined
+Definition: undefined means a variable has been declared but not assigned a value.
+Type: It is of type undefined (typeof undefined === "undefined").
+Usage:
+A variable that has been declared but not assigned a value is undefined.
+A function that doesn't return anything implicitly returns undefined.
+Accessing a non-existent object property results in undefined.

@@ -1,0 +1,88 @@
+Functions in JavaScript
+A function in JavaScript is a block of code designed to perform a particular task. It can take inputs, execute statements, and return an output. Functions help organize and reuse code effectively.
+
+Why Use Functions?
+Reusability: Write a piece of code once, and use it many times.
+Modularity: Break down complex tasks into smaller, manageable pieces.
+Maintainability: Easily update or fix specific pieces of code without affecting other parts.
+How to Declare Functions in JavaScript?
+There are four main ways to declare functions in JavaScript:
+
+1️. Function Declaration (Function Statement)
+This is the most common way to define a function in JavaScript. The function can be called before its declaration due to hoisting.
+
+Syntax:
+
+function functionName(parameter1, parameter2) {
+    // Code to be executed
+    return result; // Optional return statement
+}
+Example:
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("John");  // Output: Hello, John!
+2️. Function Expression
+In this method, functions are assigned to variables. These functions are anonymous (i.e., they don’t have a name).
+
+Syntax:
+
+const functionName = function(parameter1, parameter2) {
+    // Code to be executed
+    return result; // Optional return statement
+};
+Example:
+
+const sum = function(a, b) {
+    return a + b;
+};
+
+console.log(sum(5, 3));  // Output: 8
+Note: Function expressions are not hoisted, meaning the function can only be called after it has been defined.
+3️. Arrow Function (ES6)
+Arrow functions provide a shorter syntax for writing functions. They are also useful for preserving the context of this.
+
+Syntax:
+
+const functionName = (parameter1, parameter2) => {
+    // Code to be executed
+    return result; // Optional return statement
+};
+Example:
+
+const multiply = (a, b) => a * b;
+
+console.log(multiply(4, 2));  // Output: 8
+If the function has only one statement and a single return, you can omit the curly braces and return keyword.
+4️. The Function Constructor (Advanced)
+This is a more advanced and less common way to define functions using the Function constructor.
+
+Syntax:
+
+const functionName = new Function('parameter1', 'parameter2', 'return statement;');
+Example:
+
+const add = new Function('a', 'b', 'return a + b;');
+
+console.log(add(2, 3));  // Output: 5
+Note: This method is rarely used due to its potential issues with security and readability.
+How Functions Work in JavaScript
+Parameters and Arguments: Functions can accept inputs called parameters and can pass outputs via the return keyword.
+Return Value: A function may return a result using the return keyword. If no return is specified, it returns undefined by default.
+Scope: Functions can access variables defined outside them (in the global scope or parent functions), but variables inside the function are not accessible outside.
+Example: A Function With Parameters and Return Value
+
+function square(number) {
+    return number * number;
+}
+
+console.log(square(5));  // Output: 25
+Example: A Function Without a Return (Void Function)
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("Alice");  // Output: Hello, Alice!

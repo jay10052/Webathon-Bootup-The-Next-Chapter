@@ -1,0 +1,14 @@
+1. var (Oldest way to declare variables)
+Function-scoped: A variable declared with var is accessible throughout the function where it is declared.
+Hoisted: var is hoisted to the top but initialized with undefined.
+Can be re-declared and updated within the same scope.
+
+2. let (Preferred for mutable variables)
+Block-scoped: A let variable is accessible only within the block where it is defined.
+Hoisted but not initialized: Unlike var, it cannot be accessed before declaration (Temporal Dead Zone).
+Can be updated but not re-declared within the same scope.
+
+3. const (Preferred for constants)
+Block-scoped, like let.
+Hoisted but not initialized, like let.
+Cannot be updated or re-declared after assignment.

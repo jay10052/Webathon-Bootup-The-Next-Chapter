@@ -1,0 +1,86 @@
+1️. for Loop (Fixed Iterations)
+Used when the number of iterations is known beforehand.
+
+Syntax:
+
+for (initialization; condition; increment/decrement) {
+    // Code to execute
+}
+
+Example: Print numbers from 1 to 5
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+2️. while Loop (Condition-Based)
+Used when the number of iterations is not fixed and depends on a condition.
+Syntax:
+
+while (condition) {
+    // Code to execute
+}
+Example: Print numbers from 1 to 5
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++; // Increment to avoid infinite loop
+}
+
+3️. do...while Loop (Runs at Least Once)
+Similar to while, but executes the block at least once before checking the condition.
+Syntax:
+
+do {
+    // Code to execute
+} while (condition);
+Example: Print numbers from 1 to 5
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+4️. for...in Loop (Iterates Over Object Properties)
+Used to iterate over object properties (keys).
+Syntax:
+
+for (let key in object) {
+    // Code to execute
+}
+Example: Loop through an object
+
+let student = { name: "John", age: 20, grade: "A" };
+
+for (let key in student) {
+    console.log(key + ": " + student[key]);
+}
+
+5️. for...of Loop (Iterates Over Arrays and Strings)
+Used to iterate over iterable objects like arrays, strings, sets, maps.
+
+Syntax:
+
+
+for (let value of iterable) {
+    // Code to execute
+}
+Example: Loop through an array
+
+let numbers = [10, 20, 30];
+
+for (let num of numbers) {
+    console.log(num);
+}
+
+Break & Continue Statements
+break: Exits the loop immediately.
+continue: Skips the current iteration and moves to the next.
+Example: break
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) break; // Stops loop when i = 3
+    console.log(i);
+}
